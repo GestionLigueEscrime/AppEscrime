@@ -6,3 +6,6 @@ c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\AppliEscrime\o
 c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.csproj.GenerateResource.Cache
 c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.exe
 c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.pdb
+C:\Users\t.blaye\Documents\GitHub\AppEscrime\trunk\AppliEscrime\AppliEscrime\bin\Debug\AppliEscrime.exe.config
+C:\Users\t.blaye\Documents\GitHub\AppEscrime\trunk\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.exe
+C:\Users\t.blaye\Documents\GitHub\AppEscrime\trunk\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.pdb

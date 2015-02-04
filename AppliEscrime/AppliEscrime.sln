@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppliEscrime", "AppliEscrime\AppliEscrime.csproj", "{95F83F72-7AD2-4345-99C0-3E4E92744EAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classesEcrime", "ClassLibrary1\classesEcrime.csproj", "{693E469E-1742-4C5C-8FFC-67EEDA00A5EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEscrime", "ConsoleApplication1\TestEscrime.csproj", "{17B2071B-555D-43F5-9096-421D00722314}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95F83F72-7AD2-4345-99C0-3E4E92744EAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95F83F72-7AD2-4345-99C0-3E4E92744EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95F83F72-7AD2-4345-99C0-3E4E92744EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95F83F72-7AD2-4345-99C0-3E4E92744EAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{693E469E-1742-4C5C-8FFC-67EEDA00A5EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{693E469E-1742-4C5C-8FFC-67EEDA00A5EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{693E469E-1742-4C5C-8FFC-67EEDA00A5EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{693E469E-1742-4C5C-8FFC-67EEDA00A5EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17B2071B-555D-43F5-9096-421D00722314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17B2071B-555D-43F5-9096-421D00722314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17B2071B-555D-43F5-9096-421D00722314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17B2071B-555D-43F5-9096-421D00722314}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

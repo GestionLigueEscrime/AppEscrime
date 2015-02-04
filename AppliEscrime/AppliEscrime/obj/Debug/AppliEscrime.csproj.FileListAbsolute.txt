@@ -1,0 +1,8 @@
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\AppliEscrime\bin\Debug\AppliEscrime.exe.config
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\AppliEscrime\bin\Debug\AppliEscrime.exe
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\AppliEscrime\bin\Debug\AppliEscrime.pdb
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.csprojResolveAssemblyReference.cache
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.Properties.Resources.resources
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.csproj.GenerateResource.Cache
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.exe
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.pdb

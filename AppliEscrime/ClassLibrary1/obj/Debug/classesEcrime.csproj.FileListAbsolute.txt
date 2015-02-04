@@ -1,0 +1,5 @@
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ClassLibrary1\obj\Debug\classesEcrime.csprojResolveAssemblyReference.cache
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

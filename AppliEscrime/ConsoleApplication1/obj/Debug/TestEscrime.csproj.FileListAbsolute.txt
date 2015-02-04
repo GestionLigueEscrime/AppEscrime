@@ -1,0 +1,5 @@
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

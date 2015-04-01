@@ -3,3 +3,6 @@ c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ConsoleApplica
 c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
 c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

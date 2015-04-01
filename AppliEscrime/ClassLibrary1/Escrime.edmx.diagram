@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5637e5e10b784b48a6d42380296b7832" Name="Diagram1">
+        <EntityTypeShape EntityType="BaseEscrimeModel.ARME" Width="1.5" PointX="6" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BaseEscrimeModel.CATEGORIE" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BaseEscrimeModel.CLUB" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BaseEscrimeModel.COMPETITION" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BaseEscrimeModel.ESCRIMEUR" Width="1.5" PointX="6" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BaseEscrimeModel.MAITREDARME" Width="1.5" PointX="8.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BaseEscrimeModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <AssociationConnector Association="BaseEscrimeModel.FK_COMPETITION_CATEGORIE" ManuallyRouted="false" />
+        <AssociationConnector Association="BaseEscrimeModel.FK_ESCRIMEUR_CATEGORIE" ManuallyRouted="false" />
+        <AssociationConnector Association="BaseEscrimeModel.FK_COMPETITION_CLUB" ManuallyRouted="false" />
+        <AssociationConnector Association="BaseEscrimeModel.FK_ESCRIMEUR_CLUB" ManuallyRouted="false" />
+        <AssociationConnector Association="BaseEscrimeModel.FK_MAITREDARME_CLUB" ManuallyRouted="false" />
+        <AssociationConnector Association="BaseEscrimeModel.ARBITRER" ManuallyRouted="false" />
+        <AssociationConnector Association="BaseEscrimeModel.ETRE_RESPONSABLE" ManuallyRouted="false" />
+        <AssociationConnector Association="BaseEscrimeModel.SE_SPECIALISER" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

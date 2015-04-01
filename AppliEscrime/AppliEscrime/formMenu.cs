@@ -16,5 +16,25 @@ namespace AppliEscrime
         {
             InitializeComponent();
         }
+
+        private void menuItemQuitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void menuItemClub_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuItemMaitreDarmes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuItemCompetition_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

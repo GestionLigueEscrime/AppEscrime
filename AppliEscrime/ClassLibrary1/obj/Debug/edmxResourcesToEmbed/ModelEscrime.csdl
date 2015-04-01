@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BaseEscrimeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ARME">
+    <Key>
+      <PropertyRef Name="CODEARME" />
+    </Key>
+    <Property Name="CODEARME" Type="Int32" Nullable="false" />
+    <Property Name="NOMARME" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="MAITREDARME" Relationship="Self.SE_SPECIALISER" FromRole="ARME" ToRole="MAITREDARME" />
+  </EntityType>
+  <EntityType Name="CATEGORIE">
+    <Key>
+      <PropertyRef Name="CODECATEG" />
+    </Key>
+    <Property Name="CODECATEG" Type="Int32" Nullable="false" />
+    <Property Name="NOMCATEG" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="COMPETITION" Relationship="Self.FK_COMPETITION_CATEGORIE" FromRole="CATEGORIE" ToRole="COMPETITION" />
+    <NavigationProperty Name="ESCRIMEUR" Relationship="Self.FK_ESCRIMEUR_CATEGORIE" FromRole="CATEGORIE" ToRole="ESCRIMEUR" />
+  </EntityType>
+  <EntityType Name="CLUB">
+    <Key>
+      <PropertyRef Name="NUMCLUB" />
+    </Key>
+    <Property Name="NUMCLUB" Type="Int32" Nullable="false" />
+    <Property Name="NOMCLUB" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="VILLECLUB" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="COMPETITION" Relationship="Self.FK_COMPETITION_CLUB" FromRole="CLUB" ToRole="COMPETITION" />
+    <NavigationProperty Name="ESCRIMEUR" Relationship="Self.FK_ESCRIMEUR_CLUB" FromRole="CLUB" ToRole="ESCRIMEUR" />
+    <NavigationProperty Name="MAITREDARME" Relationship="Self.FK_MAITREDARME_CLUB" FromRole="CLUB" ToRole="MAITREDARME" />
+  </EntityType>
+  <EntityType Name="COMPETITION">
+    <Key>
+      <PropertyRef Name="CODECOMPET" />
+    </Key>
+    <Property Name="CODECOMPET" Type="Int32" Nullable="false" />
+    <Property Name="NUMCLUB" Type="Int32" Nullable="false" />
+    <Property Name="CODECATEG" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CATEGORIE" Relationship="Self.FK_COMPETITION_CATEGORIE" FromRole="COMPETITION" ToRole="CATEGORIE" />
+    <NavigationProperty Name="CLUB" Relationship="Self.FK_COMPETITION_CLUB" FromRole="COMPETITION" ToRole="CLUB" />
+    <NavigationProperty Name="MAITREDARME" Relationship="Self.ARBITRER" FromRole="COMPETITION" ToRole="MAITREDARME" />
+    <NavigationProperty Name="MAITREDARME1" Relationship="Self.ETRE_RESPONSABLE" FromRole="COMPETITION" ToRole="MAITREDARME" />
+  </EntityType>
+  <EntityType Name="ESCRIMEUR">
+    <Key>
+      <PropertyRef Name="NUMLICENCEESCRIMEUR" />
+    </Key>
+    <Property Name="NUMLICENCEESCRIMEUR" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CODECATEG" Type="Int32" Nullable="false" />
+    <Property Name="NUMCLUB" Type="Int32" Nullable="false" />
+    <Property Name="NOMESCRIMEUR" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="PRENOMESCRIMEUR" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="DATENAISSESCRIMEUR" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CATEGORIE" Relationship="Self.FK_ESCRIMEUR_CATEGORIE" FromRole="ESCRIMEUR" ToRole="CATEGORIE" />
+    <NavigationProperty Name="CLUB" Relationship="Self.FK_ESCRIMEUR_CLUB" FromRole="ESCRIMEUR" ToRole="CLUB" />
+  </EntityType>
+  <EntityType Name="MAITREDARME">
+    <Key>
+      <PropertyRef Name="NUMLICENCEMAITRE" />
+    </Key>
+    <Property Name="NUMLICENCEMAITRE" Type="Int32" Nullable="false" />
+    <Property Name="NUMCLUB" Type="Int32" Nullable="false" />
+    <Property Name="NOMMAITRE" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="PRENOMMAITRE" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="DATENAISSMAITRE" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CLUB" Relationship="Self.FK_MAITREDARME_CLUB" FromRole="MAITREDARME" ToRole="CLUB" />
+    <NavigationProperty Name="COMPETITION" Relationship="Self.ARBITRER" FromRole="MAITREDARME" ToRole="COMPETITION" />
+    <NavigationProperty Name="COMPETITION1" Relationship="Self.ETRE_RESPONSABLE" FromRole="MAITREDARME" ToRole="COMPETITION" />
+    <NavigationProperty Name="ARME" Relationship="Self.SE_SPECIALISER" FromRole="MAITREDARME" ToRole="ARME" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_COMPETITION_CATEGORIE">
+    <End Role="CATEGORIE" Type="Self.CATEGORIE" Multiplicity="1" />
+    <End Role="COMPETITION" Type="Self.COMPETITION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CATEGORIE">
+        <PropertyRef Name="CODECATEG" />
+      </Principal>
+      <Dependent Role="COMPETITION">
+        <PropertyRef Name="CODECATEG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ESCRIMEUR_CATEGORIE">
+    <End Role="CATEGORIE" Type="Self.CATEGORIE" Multiplicity="1" />
+    <End Role="ESCRIMEUR" Type="Self.ESCRIMEUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CATEGORIE">
+        <PropertyRef Name="CODECATEG" />
+      </Principal>
+      <Dependent Role="ESCRIMEUR">
+        <PropertyRef Name="CODECATEG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_COMPETITION_CLUB">
+    <End Role="CLUB" Type="Self.CLUB" Multiplicity="1" />
+    <End Role="COMPETITION" Type="Self.COMPETITION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLUB">
+        <PropertyRef Name="NUMCLUB" />
+      </Principal>
+      <Dependent Role="COMPETITION">
+        <PropertyRef Name="NUMCLUB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ESCRIMEUR_CLUB">
+    <End Role="CLUB" Type="Self.CLUB" Multiplicity="1" />
+    <End Role="ESCRIMEUR" Type="Self.ESCRIMEUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLUB">
+        <PropertyRef Name="NUMCLUB" />
+      </Principal>
+      <Dependent Role="ESCRIMEUR">
+        <PropertyRef Name="NUMCLUB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MAITREDARME_CLUB">
+    <End Role="CLUB" Type="Self.CLUB" Multiplicity="1" />
+    <End Role="MAITREDARME" Type="Self.MAITREDARME" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLUB">
+        <PropertyRef Name="NUMCLUB" />
+      </Principal>
+      <Dependent Role="MAITREDARME">
+        <PropertyRef Name="NUMCLUB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ARBITRER">
+    <End Role="COMPETITION" Type="Self.COMPETITION" Multiplicity="*" />
+    <End Role="MAITREDARME" Type="Self.MAITREDARME" Multiplicity="*" />
+  </Association>
+  <Association Name="ETRE_RESPONSABLE">
+    <End Role="COMPETITION" Type="Self.COMPETITION" Multiplicity="*" />
+    <End Role="MAITREDARME" Type="Self.MAITREDARME" Multiplicity="*" />
+  </Association>
+  <Association Name="SE_SPECIALISER">
+    <End Role="ARME" Type="Self.ARME" Multiplicity="*" />
+    <End Role="MAITREDARME" Type="Self.MAITREDARME" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="BaseEscrimeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ARME" EntityType="Self.ARME" />
+    <EntitySet Name="CATEGORIE" EntityType="Self.CATEGORIE" />
+    <EntitySet Name="CLUB" EntityType="Self.CLUB" />
+    <EntitySet Name="COMPETITION" EntityType="Self.COMPETITION" />
+    <EntitySet Name="ESCRIMEUR" EntityType="Self.ESCRIMEUR" />
+    <EntitySet Name="MAITREDARME" EntityType="Self.MAITREDARME" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <AssociationSet Name="FK_COMPETITION_CATEGORIE" Association="Self.FK_COMPETITION_CATEGORIE">
+      <End Role="CATEGORIE" EntitySet="CATEGORIE" />
+      <End Role="COMPETITION" EntitySet="COMPETITION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ESCRIMEUR_CATEGORIE" Association="Self.FK_ESCRIMEUR_CATEGORIE">
+      <End Role="CATEGORIE" EntitySet="CATEGORIE" />
+      <End Role="ESCRIMEUR" EntitySet="ESCRIMEUR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_COMPETITION_CLUB" Association="Self.FK_COMPETITION_CLUB">
+      <End Role="CLUB" EntitySet="CLUB" />
+      <End Role="COMPETITION" EntitySet="COMPETITION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ESCRIMEUR_CLUB" Association="Self.FK_ESCRIMEUR_CLUB">
+      <End Role="CLUB" EntitySet="CLUB" />
+      <End Role="ESCRIMEUR" EntitySet="ESCRIMEUR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MAITREDARME_CLUB" Association="Self.FK_MAITREDARME_CLUB">
+      <End Role="CLUB" EntitySet="CLUB" />
+      <End Role="MAITREDARME" EntitySet="MAITREDARME" />
+    </AssociationSet>
+    <AssociationSet Name="ARBITRER" Association="Self.ARBITRER">
+      <End Role="COMPETITION" EntitySet="COMPETITION" />
+      <End Role="MAITREDARME" EntitySet="MAITREDARME" />
+    </AssociationSet>
+    <AssociationSet Name="ETRE_RESPONSABLE" Association="Self.ETRE_RESPONSABLE">
+      <End Role="COMPETITION" EntitySet="COMPETITION" />
+      <End Role="MAITREDARME" EntitySet="MAITREDARME" />
+    </AssociationSet>
+    <AssociationSet Name="SE_SPECIALISER" Association="Self.SE_SPECIALISER">
+      <End Role="ARME" EntitySet="ARME" />
+      <End Role="MAITREDARME" EntitySet="MAITREDARME" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(BaseEscrimeModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(BaseEscrimeModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

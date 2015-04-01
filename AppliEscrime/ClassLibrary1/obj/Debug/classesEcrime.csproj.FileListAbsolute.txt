@@ -3,3 +3,14 @@ c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ClassLibrary1\
 c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ClassLibrary1\obj\Debug\classesEcrime.csprojResolveAssemblyReference.cache
 c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\ClassLibrary1\bin\Debug\EntityFramework.dll
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.dll
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\ClassLibrary1\bin\Debug\EntityFramework.xml
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.xml
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\ClassLibrary1\bin\Debug\fr\EntityFramework.resources.dll
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\ClassLibrary1\obj\Debug\classesEcrime.csprojResolveAssemblyReference.cache
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\ClassLibrary1\bin\Debug\classesEscrime.dll.config
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\ClassLibrary1\bin\Debug\classesEscrime.dll
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\ClassLibrary1\bin\Debug\classesEscrime.pdb
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\ClassLibrary1\obj\Debug\classesEscrime.dll
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\ClassLibrary1\obj\Debug\classesEscrime.pdb

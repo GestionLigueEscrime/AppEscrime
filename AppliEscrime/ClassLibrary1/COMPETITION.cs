@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ClassLibrary1
+namespace Btssio.Escrime
 {
     using System;
     using System.Collections.Generic;

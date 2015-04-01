@@ -9,3 +9,12 @@ c:\users\sirix\documents\visual studio 2013\Projects\AppliEscrime\AppliEscrime\o
 C:\Users\t.blaye\Documents\GitHub\AppEscrime\trunk\AppliEscrime\AppliEscrime\bin\Debug\AppliEscrime.exe.config
 C:\Users\t.blaye\Documents\GitHub\AppEscrime\trunk\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.exe
 C:\Users\t.blaye\Documents\GitHub\AppEscrime\trunk\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.pdb
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\AppliEscrime\bin\Debug\AppliEscrime.exe.config
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\AppliEscrime\bin\Debug\AppliEscrime.exe
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\AppliEscrime\bin\Debug\AppliEscrime.pdb
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.csprojResolveAssemblyReference.cache
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.formMenu.resources
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.Properties.Resources.resources
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.csproj.GenerateResource.Cache
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.exe
+Z:\Sirix\GitHub\AppEscrime\AppliEscrime\AppliEscrime\obj\Debug\AppliEscrime.pdb
